@@ -1,0 +1,66 @@
+body {
+  font-family: $main-font;
+//   font-size: 20px;
+//   line-height: 24px;
+  font-weight: 400;
+  color: $main-text;
+
+//   margin: 0;
+//   padding: 0;
+overflow-x: hidden;
+min-width: 320px;
+}
+
+html,
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color:inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: $width-mobile) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.page-section {
+  margin-bottom: 80px;
+}

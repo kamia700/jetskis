@@ -1,0 +1,49 @@
+.header-top__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 122px;
+
+  font-weight: 700;
+}
+
+.header__box {
+  display: flex;
+}
+
+.header__address {
+  position: relative;
+  margin-right: 60px;
+  padding-left: 30px;
+  width: 265px;
+}
+
+.header__address::before {
+  content: '';
+  position: absolute;
+  background-image: url('../img/address-marker.svg');
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -10px;
+}
+
+.header-bottom {
+  margin-bottom: 80px;
+}
+
+@media (max-width: $width-breakpoint-100) {
+  .header__address {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header-bottom {
+    display: none;
+  }
+
+  .header__address {
+    display: none;
+  }
+}

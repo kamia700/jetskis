@@ -1,0 +1,76 @@
+.sorting-items button {
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.7;
+  border: none;
+  background: $bg-grey;
+  border-radius: 3px;
+  padding: 5px 22px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.sorting-items button + button {
+  margin-left: 8px;
+}
+
+.sorting__btn {
+  display: flex;
+  align-items: center;
+}
+
+.sorting__btn button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting__btn button + button{
+  margin-left: 10px;
+}
+
+.sorting__select {
+  border: 1px solid $border-select;
+  margin-right: 34px;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 7px 10px 7px 20px;
+
+  height: 33px;
+  width: 178px;
+}
+
+.sortin__btngrid {
+  width: 26px;
+  height: 21px;
+}
+
+.sorting__btnline {
+  width: 25px;
+  height: 19px;
+}
+
+.sortin__button {
+  opacity: 0.3;
+  outline: none;
+}
+
+.sortin__btn--active {
+  opacity: 1;
+}
+
+@media (max-width: $width-breakpoint-840) {
+  .sortin__button {
+    display: none;
+  }
+
+  .sorting {
+    display: block;
+  }
+
+  .sorting__btn {
+    margin-top: 20px;
+  }
+}

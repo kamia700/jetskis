@@ -1,0 +1,37 @@
+.menu-mobile {
+  display: none;
+  position: absolute;
+  z-index: 15;
+  width: 243px;
+  box-shadow: 0px 0px 20px $menu-shadow;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  background-color: $white;
+}
+
+.menu-mobile__item {
+  position: relative;
+  border: 1px solid $menu-border;
+}
+
+.menu-mobile--active {
+  transform: translateX(0%);
+}
+
+.menu-mobile__link {
+  display: block;
+  padding-left: 53px;
+  padding-top: 36px;
+}
+
+.menu-mobile__img {
+  position: absolute;
+  left: 11px;
+  bottom: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .menu-mobile.menu-mobile--active {
+    display: block;
+  }
+}

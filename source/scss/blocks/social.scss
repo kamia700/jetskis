@@ -1,0 +1,18 @@
+.social__list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 90px;
+}
+
+.social__item + .social__item {
+  margin-left: 30px;
+}
+
+@media (max-width: $width-mobile) {
+  .social__list {
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}

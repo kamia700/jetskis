@@ -1,0 +1,30 @@
+.mobile-line {
+  display: none;
+  background-color: $bg-grey;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  overflow-x: scroll;
+}
+
+.mobile-line__list {
+
+  width: 450px;
+
+  padding: 14px 0;
+  padding-left: 10px;
+}
+
+.mobile-line__item {
+  display: inline-block;
+}
+
+.mobile-line__item + .mobile-line__item {
+  padding-left: 15px;
+}
+
+@media (max-width: $tablet-width) {
+  .mobile-line {
+    display: block;
+  }
+}
